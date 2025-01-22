@@ -1,16 +1,32 @@
-import { dirname } from "path";
-import { fileURLToPath } from "url";
-import { FlatCompat } from "@eslint/eslintrc";
+// @ts-check
+import path from "node:path";
+import {fileURLToPath} from "node:url";
+import js from "@eslint/js";
+import {FlatCompat} from "@eslint/eslintrc";
+import {fixupConfigRules} from "@eslint/compat";
+import ts from "typescript-eslint";
+import prettierConfigRecommended from "eslint-plugin-prettier/recommended";
+import tailwind from "eslint-plugin-tailwindcss";
+
 
 const __filename = fileURLToPath(import.meta.url);
-const __dirname = dirname(__filename);
-
+const __dirname = path.dirname(__filename);
 const compat = new FlatCompat({
   baseDirectory: __dirname,
+  recommendedConfig: js.configs.recommended,
+  allConfig: js.configs.all,
 });
 
-const eslintConfig = [
-  ...compat.extends("next/core-web-vitals", "next/typescript"),
+const patchedConfig = fixupConfigRules([...compat.extends("next/core-web-vitals", "next/typescript")]);
+
+const config = [
+  ...patchedConfig,
+  ...ts.configs.recommended,
+  ...tailwind.configs["flat/recommended"],
+
+  // Add more flat configs here
+  prettierConfigRecommended, // Last since it disables some previously set rules
+  { ignores: [".next/*"] },
 ];
 
-export default eslintConfig;
+export default config;
