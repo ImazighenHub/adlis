@@ -1,0 +1,53 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+@layer base {
+  :root {
+    --background: #FAF4F0;
+    --foreground: #000;
+
+    /* Purple Shades */
+    --purple-100: #AE7AFF;
+    --purple-200: #8B62CC;
+    --purple-300: #EFE4FF;
+
+    /* Yellow Shades */
+    --yellow-100: #FAE8A4;
+    --yellow-200: #FEFAED;
+
+    /* Pink Shades */
+    --pink-100: #E99898;
+    --pink-200: #FBEAEA;
+
+    /* Green Shades */
+    --green-100: #98E9AB;
+    --green-200: #EAFBEE;
+
+    /* Neutral (n) Shades */
+    --neutral-100: #000;
+    --neutral-200: #161616;
+    --neutral-300: #5F646D;
+    --neutral-400: #E7E8E9;
+
+    /* White */
+    --white: #FFF;
+
+
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
