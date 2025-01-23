@@ -8,36 +8,38 @@ body {
 
 @layer base {
   :root {
-    --background: #FAF4F0;
-    --foreground: #000;
+    --background: 30 66.7% 95.3%;
+    --foreground: 0 0% 0%;
+    --primary: 0 0% 0%;
+    --primary-foreground: 210 40% 98%;
+    --secondary: 210 40% 96.1%;
+    --secondary-foreground: 0 0% 0%;
 
     /* Purple Shades */
-    --purple-100: #AE7AFF;
-    --purple-200: #8B62CC;
-    --purple-300: #EFE4FF;
+    --purple-100: 265 100% 75.1%;
+    --purple-200: 265 41.9% 60%;
+    --purple-300: 265 100% 93.5%;
 
     /* Yellow Shades */
-    --yellow-100: #FAE8A4;
-    --yellow-200: #FEFAED;
+    --yellow-100: 50 90.2% 80.4%;
+    --yellow-200: 50 94.7% 94.5%;
 
     /* Pink Shades */
-    --pink-100: #E99898;
-    --pink-200: #FBEAEA;
+    --pink-100: 0 68.8% 72.5%;
+    --pink-200: 0 86.1% 95.7%;
 
     /* Green Shades */
-    --green-100: #98E9AB;
-    --green-200: #EAFBEE;
+    --green-100: 140 66.7% 75.7%;
+    --green-200: 140 81.6% 93.5%;
 
-    /* Neutral (n) Shades */
-    --neutral-100: #000;
-    --neutral-200: #161616;
-    --neutral-300: #5F646D;
-    --neutral-400: #E7E8E9;
+    /* Neutral Shades */
+    --neutral-100: 0 0% 0%;
+    --neutral-200: 0 0% 8.6%;
+    --neutral-300: 220 6.3% 34%;
+    --neutral-400: 220 12.5% 91.8%;
 
     /* White */
-    --white: #FFF;
-
-
+    --white: 0 0% 100%;
   }
 }
 
