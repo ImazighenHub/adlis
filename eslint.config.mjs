@@ -24,7 +24,15 @@ const config = [
 
   // Add more flat configs here
   prettierConfigRecommended, // Last since it disables some previously set rules
-  { ignores: [".next/*"] },
+  { ignores: [".next/*",
+      ".cache/*",
+      "package-lock.json",
+      "public/*",
+      "node_modules/*",
+      "next-env.d.ts",
+      "next.config.ts",
+      "yarn.lock",
+      "pnpm-lock.yaml",] },
 ];
 
 export default config;
