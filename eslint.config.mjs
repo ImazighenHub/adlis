@@ -4,7 +4,6 @@ import {fileURLToPath} from "node:url";
 import js from "@eslint/js";
 import {FlatCompat} from "@eslint/eslintrc";
 import {fixupConfigRules} from "@eslint/compat";
-import ts from "typescript-eslint";
 import prettierConfigRecommended from "eslint-plugin-prettier/recommended";
 import tailwind from "eslint-plugin-tailwindcss";
 
@@ -21,7 +20,6 @@ const patchedConfig = fixupConfigRules([...compat.extends("next/core-web-vitals"
 
 const config = [
   ...patchedConfig,
-  ...ts.configs.recommended,
   ...tailwind.configs["flat/recommended"],
 
   // Add more flat configs here
