@@ -1,18 +1,18 @@
 import type { Metadata } from 'next';
 import '@/styles/globals.css';
 import { ReactNode } from 'react';
-import { bebasNeue, ibmPlexSans } from '@/styles/fonts';
+import { bebasNeue, ibmPlexSans, notoSansTifinagh } from '@/styles/fonts';
 
 export const metadata: Metadata = {
-  title: 'Adlis [ⴰⴷⵍⵉⵙ]',
+  title: 'ⴰⴷⵍⵉⵙ [Adlis]',
   description:
-    'Adlis [ⴰⴷⵍⵉⵙ] - A library for discovering and borrowing Amazigh books, preserving and celebrating Amazigh culture and literature.',
+    'ⴰⴷⵍⵉⵙ [Adlis] - A library for discovering and borrowing Amazigh books, preserving and celebrating Amazigh culture and literature.',
 };
 
 const RootLayout = ({ children }: { children: ReactNode }) => (
   <html lang='en'>
     <body
-      className={`${ibmPlexSans.className} ${bebasNeue.variable} antialiased`}
+      className={`${ibmPlexSans.className} ${bebasNeue.variable} ${notoSansTifinagh.variable} antialiased`}
     >
       {children}
     </body>
