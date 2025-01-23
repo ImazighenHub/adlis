@@ -14,4 +14,4 @@ if [ -n "$GIT_SEQUENCE_EDITOR" ]; then
   exit 0
 fi
 
-npx cz --hook
+npx cz --hook || true
