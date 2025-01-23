@@ -4,8 +4,6 @@ import {fileURLToPath} from "node:url";
 import js from "@eslint/js";
 import {FlatCompat} from "@eslint/eslintrc";
 import {fixupConfigRules} from "@eslint/compat";
-import prettierConfigRecommended from "eslint-plugin-prettier/recommended";
-import tailwind from "eslint-plugin-tailwindcss";
 
 
 const __filename = fileURLToPath(import.meta.url);
@@ -16,14 +14,19 @@ const compat = new FlatCompat({
   allConfig: js.configs.all,
 });
 
-const patchedConfig = fixupConfigRules([...compat.extends("next/core-web-vitals", "next/typescript")]);
+const patchedConfig = fixupConfigRules([
+    ...compat.extends(
+        "next/core-web-vitals",
+        "next/typescript",
+        "plugin:tailwindcss/recommended",
+        "prettier"
+    )
+]);
+
 
 const config = [
   ...patchedConfig,
-  ...tailwind.configs["flat/recommended"],
-
   // Add more flat configs here
-  prettierConfigRecommended, // Last since it disables some previously set rules
   { ignores: [".next/*",
       ".cache/*",
       "package-lock.json",
@@ -33,6 +36,14 @@ const config = [
       "next.config.ts",
       "yarn.lock",
       "pnpm-lock.yaml",] },
+    {
+        settings: {
+            tailwindcss: {
+                callees: ["cn", "cva"],
+                config: "tailwind.config.ts",
+            },
+        }
+    }
 ];
 
 export default config;
