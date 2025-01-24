@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import '@/styles/globals.css';
 import { ReactNode } from 'react';
 import { bebasNeue, ibmPlexSans, notoSansTifinagh } from '@/styles/fonts';
+import { ThemeProvider } from 'next-themes';
 
 export const metadata: Metadata = {
   title: 'ⴰⴷⵍⵉⵙ [Adlis]',
@@ -10,11 +11,11 @@ export const metadata: Metadata = {
 };
 
 const RootLayout = ({ children }: { children: ReactNode }) => (
-  <html lang='en'>
+  <html lang='en' suppressHydrationWarning>
     <body
       className={`${ibmPlexSans.className} ${bebasNeue.variable} ${notoSansTifinagh.variable} antialiased`}
     >
-      {children}
+      <ThemeProvider attribute='data-theme'>{children}</ThemeProvider>
     </body>
   </html>
 );

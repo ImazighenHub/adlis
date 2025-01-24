@@ -12,7 +12,7 @@ const ScrollHeader = ({ children }: { children: ReactNode }) => {
       className={cn(
         'fixed inset-x-0 top-0 z-20 border-b border-neutral-100 dark:border-white md:relative',
         {
-          'dark:bg-n-2 bg-background md:!bg-transparent': isScrolled,
+          'dark:bg-neutral-200 bg-background md:!bg-transparent': isScrolled,
         },
       )}
     >

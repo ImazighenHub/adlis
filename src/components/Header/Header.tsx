@@ -1,11 +1,11 @@
-import ScrollHeader from './ScrollHeader'; // Adjust the path as needed
+import ScrollHeader from './ScrollHeader';
 import {
   ArrowBigLeftIcon,
   BellIcon,
   SearchIcon,
   SquareLibrary,
 } from 'lucide-react';
-import { Button } from '@/components';
+import { Button, ThemeToggle } from '@/components';
 
 type HeaderProps = {
   back?: boolean;
@@ -28,6 +28,7 @@ const Header = ({ back }: HeaderProps) => {
           </span>
         </div>
         <div className='ml-auto flex shrink-0 items-center'>
+          <ThemeToggle />
           <Button variant='ghost' size='md'>
             <SearchIcon />
           </Button>

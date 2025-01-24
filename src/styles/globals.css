@@ -9,8 +9,8 @@ body {
 @layer base {
   :root {
     --background: 30 66.7% 95.3%;
-    --foreground: 0 0% 0%;
-    --primary: 0 0% 0%;
+    --foreground: 0 0% 0%; /* Black */
+    --primary: 0 0% 0%; /* Black */
     --primary-foreground: 210 40% 98%;
     --secondary: 210 40% 96.1%;
     --secondary-foreground: 0 0% 0%;
@@ -33,13 +33,23 @@ body {
     --green-200: 140 81.6% 93.5%;
 
     /* Neutral Shades */
-    --neutral-100: 0 0% 0%;
+    --neutral-100: 0 0% 0%; /* Black */
     --neutral-200: 0 0% 8.6%;
     --neutral-300: 220 6.3% 34%;
     --neutral-400: 220 12.5% 91.8%;
 
     /* White */
     --white: 0 0% 100%;
+    --radius: 0.5rem;
+  }
+
+  [data-theme='dark'] {
+    --background: 0 0% 0%;  /* Black */
+    --foreground: 0 0% 100%;  /* White */
+    --primary: 265 100% 75.1%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 265 41.9% 60%;
+    --secondary-foreground: 0 0% 100%;
   }
 }
 
