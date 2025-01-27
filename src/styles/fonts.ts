@@ -73,6 +73,7 @@ export const ibmPlexSans = localFont({
       style: 'italic',
     },
   ],
+  variable: '--ibm-plex-sans',
 });
 
 export const bebasNeue = localFont({

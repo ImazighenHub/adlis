@@ -3,10 +3,11 @@ import { getMessages } from 'next-intl/server';
 import { bebasNeue, ibmPlexSans, notoSansTifinagh } from '@/styles/fonts';
 import { ThemeProvider } from 'next-themes';
 import { NextIntlClientProvider } from 'next-intl';
+import { Locale } from '@/i18n/routing';
 
 type Props = {
   children: ReactNode;
-  locale: string;
+  locale: Locale;
 };
 
 const BaseLayout = async ({ children, locale }: Props) => {
@@ -15,7 +16,7 @@ const BaseLayout = async ({ children, locale }: Props) => {
   return (
     <html lang={locale} suppressHydrationWarning>
       <body
-        className={`${ibmPlexSans.className} ${bebasNeue.variable} ${notoSansTifinagh.variable} antialiased`}
+        className={`${locale === 'zgh' ? notoSansTifinagh.className : ibmPlexSans.className} ${ibmPlexSans.variable} ${bebasNeue.variable} ${notoSansTifinagh.variable} antialiased`}
       >
         <ThemeProvider attribute='data-theme'>
           <NextIntlClientProvider messages={messages}>
