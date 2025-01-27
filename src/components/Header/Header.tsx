@@ -1,11 +1,7 @@
 import ScrollHeader from './ScrollHeader';
-import {
-  ArrowBigLeftIcon,
-  BellIcon,
-  SearchIcon,
-  SquareLibrary,
-} from 'lucide-react';
+import { ArrowBigLeftIcon, BellIcon, SquareLibrary } from 'lucide-react';
 import { Button, ThemeToggle } from '@/components';
+import LocaleSwitcher from '../LocaleSwitcher';
 
 type HeaderProps = {
   back?: boolean;
@@ -27,14 +23,12 @@ const Header = ({ back }: HeaderProps) => {
             <span className='align-super text-sm lg:text-xs'>[Adlis]</span>
           </span>
         </div>
-        <div className='ml-auto flex shrink-0 items-center'>
-          <ThemeToggle />
-          <Button variant='ghost' size='md'>
-            <SearchIcon />
-          </Button>
-          <Button variant='ghost' size='md'>
+        <div className='ml-auto flex shrink-0 items-center gap-2'>
+          <Button variant='primary' size='icon'>
             <BellIcon />
           </Button>
+          <ThemeToggle />
+          <LocaleSwitcher />
         </div>
       </div>
     </ScrollHeader>

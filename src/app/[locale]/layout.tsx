@@ -2,13 +2,13 @@ import React, { ReactNode } from 'react';
 import { BaseLayout, Header } from '@/components';
 import Image from 'next/image';
 import Footer from '@/components/Footer';
-import { routing } from '@/i18n/routing';
+import { Locale, routing } from '@/i18n/routing';
 import { getTranslations, setRequestLocale } from 'next-intl/server';
 import { notFound } from 'next/navigation';
 
 type Props = {
   children: ReactNode;
-  params: { locale: (typeof routing.locales)[number] };
+  params: { locale: Locale };
 };
 
 export function generateStaticParams() {

@@ -20,7 +20,7 @@ const SelectTrigger = forwardRef<
   <SelectPrimitive.Trigger
     ref={ref}
     className={cn(
-      'placeholder:text-muted-foreground flex h-9 w-full items-center justify-between whitespace-nowrap rounded-md border border-input bg-transparent px-3 py-2 text-sm shadow-sm ring-offset-background focus:outline-none focus:ring-1 focus:ring-ring disabled:cursor-not-allowed disabled:opacity-50 [&>span]:line-clamp-1',
+      'inline-flex h-10 items-center justify-center border-2 border-black fill-neutral-100 pl-2 pr-1 font-bold text-neutral-100 transition-colors hover:shadow-primary-100 active:shadow-primary-100 disabled:cursor-not-allowed disabled:opacity-50 aria-expanded:shadow-primary-100 dark:border-1 dark:border-white dark:fill-white dark:text-white dark:shadow-none [&>span]:line-clamp-1 [&_svg]:pointer-events-none [&_svg]:shrink-0',
       className,
     )}
     {...props}
@@ -76,9 +76,9 @@ const SelectContent = forwardRef<
     <SelectPrimitive.Content
       ref={ref}
       className={cn(
-        'bg-popover text-popover-foreground relative z-50 max-h-96 min-w-32 overflow-hidden rounded-md border shadow-md data-[state=open]:animate-in data-[state=closed]:animate-out data-[state=closed]:fade-out-0 data-[state=open]:fade-in-0 data-[state=closed]:zoom-out-95 data-[state=open]:zoom-in-95 data-[side=bottom]:slide-in-from-top-2 data-[side=left]:slide-in-from-right-2 data-[side=right]:slide-in-from-left-2 data-[side=top]:slide-in-from-bottom-2',
+        'relative z-50 max-h-96 min-w-32 overflow-hidden border-2  border-black bg-background fill-neutral-100 shadow-primary-100 data-[state=open]:animate-in data-[state=closed]:animate-out data-[state=closed]:fade-out-0 data-[state=open]:fade-in-0 data-[state=closed]:zoom-out-95 data-[state=open]:zoom-in-95 data-[side=bottom]:slide-in-from-top-2 data-[side=left]:slide-in-from-right-2 data-[side=right]:slide-in-from-left-2 data-[side=top]:slide-in-from-bottom-2 dark:border-1 dark:border-white dark:fill-white dark:text-white',
         position === 'popper' &&
-          'data-[side=bottom]:translate-y-1 data-[side=left]:-translate-x-1 data-[side=right]:translate-x-1 data-[side=top]:-translate-y-1',
+          'data-[side=bottom]:translate-y-2 data-[side=left]:-translate-x-1 data-[side=right]:translate-x-1 data-[side=top]:-translate-y-2',
         className,
       )}
       position={position}
@@ -119,7 +119,7 @@ const SelectItem = forwardRef<
   <SelectPrimitive.Item
     ref={ref}
     className={cn(
-      'focus:bg-accent focus:text-accent-foreground relative flex w-full cursor-default select-none items-center rounded-sm py-1.5 pl-2 pr-8 text-sm outline-none data-[disabled]:pointer-events-none data-[disabled]:opacity-50',
+      'relative flex w-full cursor-default select-none items-center py-1.5 pl-2 pr-8 text-sm outline-none hover:cursor-pointer hover:bg-purple-100/60 focus:bg-purple-100/60 data-[disabled]:pointer-events-none data-[disabled]:opacity-50',
       className,
     )}
     {...props}
@@ -140,7 +140,7 @@ const SelectSeparator = forwardRef<
 >(({ className, ...props }, ref) => (
   <SelectPrimitive.Separator
     ref={ref}
-    className={cn('bg-muted -mx-1 my-1 h-px', className)}
+    className={cn('-mx-1 my-1 h-px bg-primary', className)}
     {...props}
   />
 ));

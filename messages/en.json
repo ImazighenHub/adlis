@@ -3,6 +3,10 @@
     "title": "Adlis",
     "description": "A library for discovering and borrowing Amazigh books, preserving and celebrating Amazigh culture and literature"
   },
+  "LocaleSwitcher": {
+    "label": "Change language",
+    "locale": "{locale, select, zgh {ⵜⴰⵎⴰⵣⵉⵖⵜ} fr {Français} en {English} other {Unknown}}"
+  },
   "Footer": {
     "terms": "Terms and Conditions"
   }

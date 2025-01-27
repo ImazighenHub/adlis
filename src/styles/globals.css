@@ -14,23 +14,32 @@ body {
     --primary-foreground: 210 40% 98%;
     --secondary: 210 40% 96.1%;
     --secondary-foreground: 0 0% 0%;
+    --border: 0 0% 0%;
 
     /* Purple Shades */
-    --purple-100: 265 100% 75.1%;
-    --purple-200: 265 41.9% 60%;
-    --purple-300: 265 100% 93.5%;
+    --purple-100: 264.9 100% 74.5%;
+    --purple-200: 264.9 100% 87.3%;
+    --purple-300: 265.4 100% 94.9%;
 
     /* Yellow Shades */
-    --yellow-100: 50 90.2% 80.4%;
-    --yellow-200: 50 94.7% 94.5%;
+    --yellow-100: 52.0 100% 67.5%;
+    --yellow-200: 52.2 100% 80.4%;
+    --yellow-300: 52.8 100% 88.6%;
 
     /* Pink Shades */
-    --pink-100: 0 68.8% 72.5%;
-    --pink-200: 0 86.1% 95.7%;
+    --pink-100: 325.6 100% 77.1%;
+    --pint-200: 325.3 100% 88.8%;
+    --pink-300: 324.8 100% 94.3%;
 
     /* Green Shades */
-    --green-100: 140 66.7% 75.7%;
-    --green-200: 140 81.6% 93.5%;
+    --green-100: 146.0 89% 71.6%;
+    --green-200: 145.7 88.5% 82.9%;
+    --green-300: 146.7 88.2% 90%;
+
+    /* Blue Shades */
+    --blue-100: 187.2 100% 77.1%;
+    --blue-200: 187.1 100% 85.1%;
+    --blue-300: 187.3 100% 92.0%;
 
     /* Neutral Shades */
     --neutral-100: 0 0% 0%; /* Black */
@@ -41,6 +50,16 @@ body {
     /* White */
     --white: 0 0% 100%;
     --radius: 0.5rem;
+
+    /* Shadows */
+    --shadow-primary-1: 0.125rem 0.125rem 0 '#000000';
+    --shadow-primary-2: 0.25rem 0.25rem 0 '#000000';
+    --shadow-primary-3: 0.375rem 0.375rem 0 '#000000';
+    --shadow-primary-4: 0.5rem 0.5rem 0 '#000000';
+    --shadow-secondary-1: 0.125rem -0.125rem 0 '#000000';
+    --shadow-secondary-2: 0.25rem -0.25rem 0 '#000000';
+    --shadow-secondary-3: 0.375rem -0.375rem 0 '#000000';
+    --shadow-secondary-4: 0.5rem -0.5rem 0 '#000000';
   }
 
   [data-theme='dark'] {
@@ -50,6 +69,18 @@ body {
     --primary-foreground: 0 0% 100%;
     --secondary: 265 41.9% 60%;
     --secondary-foreground: 0 0% 100%;
+    --border: 0 0% 100%;
+
+    /* Shadows */
+    --shadow-primary-1: 0.125rem 0.125rem 0 '#ffffff';
+    --shadow-primary-2: 0.25rem 0.25rem 0 '#ffffff';
+    --shadow-primary-3: 0.375rem 0.375rem 0 '#ffffff';
+    --shadow-primary-4: 0.5rem 0.5rem 0 '#ffffff';
+    --shadow-secondary-1: 0.125rem -0.125rem 0 '#ffffff';
+    --shadow-secondary-2: 0.25rem -0.25rem 0 '#ffffff';
+    --shadow-secondary-3: 0.375rem -0.375rem 0 '#ffffff';
+    --shadow-secondary-4: 0.5rem -0.5rem 0 '#ffffff';
+
   }
 }
 
@@ -62,4 +93,5 @@ body {
     @apply bg-background text-foreground;
   }
 }
+
 

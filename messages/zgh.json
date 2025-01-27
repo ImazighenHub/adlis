@@ -3,6 +3,10 @@
     "title": "ⴰⴷⵍⵉⵙ",
     "description": "ⴰⵏⴼⵉⵙ ⵏ ⵉⴳⵍⴷⴰⵏ ⴷ ⵉⵇⵇⵔⴰⵏ ⵜⵎⴰⵣⵉⵖⵜ, ⴰⵡⵓⵔ ⵉⵎⵖⵔⴰⵏ ⴰⴷ ⵙⵍⴰⵡⴰⵏ ⵜⵎⴰⵣⵉⵖⵜ ⴷ ⵜⴰⵎⵓⵔⴰⵙⵜ, ⴰⵏⴼⴰⵡⵉ ⵏ ⵜⵎⴰⵣⵉⵖⵜ ⵓⴷⵍⵉⵙⵏ"
   },
+  "LocaleSwitcher": {
+    "label": "Change language",
+    "locale": "{locale, select, zgh {ⵜⴰⵎⴰⵣⵉⵖⵜ} fr {Français} en {English} other {Unknown}}"
+  },
   "Footer": {
     "terms": "ⵜⴰⵙⵔⵜⵉⵜ ⵏ ⵜⵉⵏⵏⵓⵜⵍⴰ"
   }

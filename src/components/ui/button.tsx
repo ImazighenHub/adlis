@@ -5,16 +5,16 @@ import { cn } from '@/lib/utils';
 
 // Define shared styles for primary and default variants
 const primaryStyles =
-  'bg-primary text-primary-foreground shadow hover:bg-primary/90';
+  'bg-purple-100/80 text-neutral-100 shadow hover:bg-purple-100/60 active:bg-purple-100';
 
 const buttonVariants = cva(
-  'inline-flex h-13 items-center justify-center rounded-sm fill-neutral-100 font-bold text-neutral-100 transition-colors dark:fill-white dark:text-white [&_svg]:pointer-events-none [&_svg]:shrink-0',
+  'inline-flex h-12 items-center justify-center border-2 border-black fill-neutral-100 font-bold text-neutral-100 transition-colors hover:shadow-primary-100 active:shadow-primary-100 dark:border-0 dark:fill-white dark:text-white dark:shadow-none [&_svg]:pointer-events-none [&_svg]:shrink-0',
   {
     variants: {
       variant: {
         default: primaryStyles,
         primary: primaryStyles,
-        destructive: 'bg-destructive shadow-sm hover:bg-destructive/90',
+        destructive: 'bg-destructive  hover:bg-destructive/90',
         outline: 'border border-neutral-100',
         secondary: 'shadow-sm hover:bg-secondary/80',
         ghost:
@@ -26,6 +26,7 @@ const buttonVariants = cva(
         default: 'h-13 px-5 [&_svg]:size-6',
         sm: 'h-8 px-2 text-sm [&_svg]:size-4',
         md: 'h-9 px-3 [&_svg]:size-6',
+        icon: 'size-10 px-0',
       },
     },
     defaultVariants: {
