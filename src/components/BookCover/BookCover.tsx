@@ -23,7 +23,7 @@ function BookCover({
   return (
     <div
       className={cn(
-        'relative transition-all duration-300',
+        'relative select-none transition-all duration-300',
         bookCoverVariantStyles[variant],
         className,
       )}
