@@ -8,7 +8,7 @@ const primaryStyles =
   'bg-purple-100/80 text-neutral-100  hover:bg-purple-100/60 active:bg-purple-100 dark:border-0';
 
 const buttonVariants = cva(
-  'inline-flex h-12 items-center justify-center border-2 border-black fill-neutral-100 font-bold text-neutral-100 shadow-primary-1 transition-colors  dark:fill-white dark:text-white dark:shadow-none [&_svg]:pointer-events-none [&_svg]:shrink-0',
+  'inline-flex h-12 select-none items-center justify-center border-2 border-black fill-neutral-100 font-bold text-neutral-100 shadow-primary-1 transition-colors  dark:fill-white dark:text-white dark:shadow-none [&_svg]:pointer-events-none [&_svg]:shrink-0',
   {
     variants: {
       variant: {
