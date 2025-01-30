@@ -52,14 +52,14 @@ body {
     --radius: 0.5rem;
 
     /* Shadows */
-    --shadow-primary-1: 0.125rem 0.125rem 0 '#000000';
-    --shadow-primary-2: 0.25rem 0.25rem 0 '#000000';
-    --shadow-primary-3: 0.375rem 0.375rem 0 '#000000';
-    --shadow-primary-4: 0.5rem 0.5rem 0 '#000000';
-    --shadow-secondary-1: 0.125rem -0.125rem 0 '#000000';
-    --shadow-secondary-2: 0.25rem -0.25rem 0 '#000000';
-    --shadow-secondary-3: 0.375rem -0.375rem 0 '#000000';
-    --shadow-secondary-4: 0.5rem -0.5rem 0 '#000000';
+    --shadow-primary-1: 0.125rem 0.125rem 0 #000;
+    --shadow-primary-2: 0.25rem 0.25rem 0 #000;
+    --shadow-primary-3: 0.375rem 0.375rem 0 #000;
+    --shadow-primary-4: 0.5rem 0.5rem 0 #000;
+    --shadow-secondary-1: 0.125rem -0.125rem 0 #000;
+    --shadow-secondary-2: 0.25rem -0.25rem 0 #000;
+    --shadow-secondary-3: 0.375rem -0.375rem 0 #000;
+    --shadow-secondary-4: 0.5rem -0.5rem 0 #000;
   }
 
   [data-theme='dark'] {
@@ -72,14 +72,14 @@ body {
     --border: 0 0% 100%;
 
     /* Shadows */
-    --shadow-primary-1: 0.125rem 0.125rem 0 '#ffffff';
-    --shadow-primary-2: 0.25rem 0.25rem 0 '#ffffff';
-    --shadow-primary-3: 0.375rem 0.375rem 0 '#ffffff';
-    --shadow-primary-4: 0.5rem 0.5rem 0 '#ffffff';
-    --shadow-secondary-1: 0.125rem -0.125rem 0 '#ffffff';
-    --shadow-secondary-2: 0.25rem -0.25rem 0 '#ffffff';
-    --shadow-secondary-3: 0.375rem -0.375rem 0 '#ffffff';
-    --shadow-secondary-4: 0.5rem -0.5rem 0 '#ffffff';
+    --shadow-primary-1: 0.125rem 0.125rem 0 #fff;
+    --shadow-primary-2: 0.25rem 0.25rem 0 #fff;
+    --shadow-primary-3: 0.375rem 0.375rem 0 #fff;
+    --shadow-primary-4: 0.5rem 0.5rem 0 #fff;
+    --shadow-secondary-1: 0.125rem -0.125rem 0 #fff;
+    --shadow-secondary-2: 0.25rem -0.25rem 0 #fff;
+    --shadow-secondary-3: 0.375rem -0.375rem 0 #fff;
+    --shadow-secondary-4: 0.5rem -0.5rem 0 #fff;
 
   }
 }
