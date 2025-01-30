@@ -45,7 +45,7 @@ function BookOverview({ book }: BookOverviewProps) {
           </p>
         </div>
         <p className='mt-2 text-justify text-lg'>{description}</p>
-        <Button>
+        <Button className='!important mt-4 min-h-14 w-fit md:w-full'>
           <BookIcon size={20} />
           <span className='text-xl'>Borrow</span>
         </Button>

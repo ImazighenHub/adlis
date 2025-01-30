@@ -4,5 +4,6 @@ export { default as LocaleSwitcher } from './LocaleSwitcher';
 export { default as BookOverview } from './BookOverview';
 export { default as BookList } from './BookList';
 export { default as BookCover } from './BookCover';
+export { default as BookCard } from './BookCard';
 export * from './ThemeToggle';
 export * from './ui';
