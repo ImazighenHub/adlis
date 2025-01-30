@@ -5,6 +5,14 @@ import createNextIntlPlugin from "next-intl/plugin";
 const withNextIntl = createNextIntlPlugin();
 
 const nextConfig: NextConfig = {
+    images: {
+        remotePatterns: [
+            {
+                protocol: 'https',
+                hostname: 'placehold.co',
+            }
+        ],
+    },
     webpack(config) {
         // Grab the existing rule that handles SVG imports
         // @ts-ignore
