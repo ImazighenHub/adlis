@@ -13,9 +13,13 @@ function BookList({ books, containerClassName, title }: BookListProps) {
     <section className={containerClassName}>
       <h2 className='mb-5 text-h2 font-bold md:mb-4 md:text-h3'>{title}</h2>
       <ul className='mt-10 flex flex-wrap gap-5 sm:flex-col sm:items-center'>
-        {books.map((book) => (
-          <BookCard key={book.id} book={book} />
-        ))}
+        {books.map((book) => {
+          return book.id === '1' ? (
+            <BookCard key={book.id} book={book} isLoaned />
+          ) : (
+            <BookCard key={book.id} book={book} />
+          );
+        })}
       </ul>
     </section>
   );
