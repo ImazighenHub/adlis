@@ -12,5 +12,20 @@
   },
   "Home": {
     "newPublications": "Nouvelles Parutions"
+  },
+  "Auth": {
+    "authTitle": "{action, select, SIGN_IN {Welcome back to Adlis} SIGN_UP {Join Adlis} FORGOT_PASSWORD {Forgot your password?} other {}}",
+    "authDescription": "{action, select, SIGN_IN {Sign in to your account to continue.} SIGN_UP {By uploading a valid ID during signup, you unlock full borrowing privileges and can start borrowing books immediately. <b>If you choose not to upload your ID, you will still have access to all our titles, but you'll only be able to download them.</b>} FORGOT_PASSWORD {Enter your email below, and you'll receive instructions on how to reset your password shortly.} other {}}",
+    "authAlternateText": "{action, select, SIGN_IN {New to Adlis?} other {Already registered?}}",
+    "authAlternateAction": "{action, select, SIGN_IN {Create an account} other {Sign in to your account}}",
+    "authAction": "{action, select, SIGN_IN {Sign In} SIGN_UP {Create account} FORGOT_PASSWORD {Start recovery} other {}}",
+    "fullName": "Full Name",
+    "email": "Email",
+    "password": "Password",
+    "confirmPassword": "Confirm Password",
+    "idCardNumber": "ID Card Number",
+    "idCard": "Upload ID Card",
+    "signInSubmit": "Sign In",
+    "signUpSubmit": "Create account"
   }
 }

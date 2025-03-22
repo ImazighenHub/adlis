@@ -41,6 +41,18 @@ body {
     --blue-200: 187.1 100% 85.1%;
     --blue-300: 187.3 100% 92.0%;
 
+    /* Success Colors */
+    --success: 158.6 63.2% 53.1%;
+    --success-foreground: 146.7 88.2% 90.0%;
+
+    /* Warning Colors */
+    --warning: 21.6 100% 70.6%;
+    --warning-foreground: 32.6 100% 92.0%;
+
+    /* Destructive Colors */
+    --destructive: 0 100% 66.5%;
+    --destructive-foreground: 0 100% 92.0%;
+
     /* Neutral Shades */
     --neutral-100: 0 0% 0%; /* Black */
     --neutral-200: 0 0% 8.6%;
@@ -50,6 +62,8 @@ body {
     /* White */
     --white: 0 0% 100%;
     --radius: 0.5rem;
+
+
 
     /* Shadows */
     --shadow-primary-1: 0.125rem 0.125rem 0 #000;

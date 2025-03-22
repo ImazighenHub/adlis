@@ -5,5 +5,7 @@ export { default as BookOverview } from './BookOverview';
 export { default as BookList } from './BookList';
 export { default as BookCover } from './BookCover';
 export { default as BookCard } from './BookCard';
+export { default as AuthForm } from './AuthForm';
+export { default as ImageUpload } from './ImageUploader';
 export * from './ThemeToggle';
 export * from './ui';

@@ -12,5 +12,30 @@
   },
   "Home": {
     "newPublications": "New Publications"
+  },
+  "Auth": {
+    "authTitle": "{action, select, SIGN_IN {Welcome back to Adlis} SIGN_UP {Join Adlis} FORGOT_PASSWORD {Forgot your password?} other {}}",
+    "authDescription": "{action, select, SIGN_IN {Sign in to your account to continue.} SIGN_UP {Upload a valid ID during signup to unlock full borrowing privileges and borrow eligible books. <b>If you don't, you'll still view all book pages and download available titles—but you won't be able to borrow books.</b>} FORGOT_PASSWORD {Enter your email below, and you'll receive instructions on how to reset your password shortly.} other {}}",
+    "authAlternateText": "{action, select, SIGN_IN {New to Adlis?} other {Already registered?}}",
+    "authAlternateAction": "{action, select, SIGN_IN {Create an account} other {Sign in to your account}}",
+    "authAction": "{action, select, SIGN_IN {Sign In} SIGN_UP {Create account} FORGOT_PASSWORD {Start recovery} other {}}",
+    "fullName": "Full Name",
+    "email": "Email",
+    "password": "Password",
+    "confirmPassword": "Confirm Password",
+    "idCardNumber": "ID Card Number",
+    "idCard": "ID Card",
+    "idCardUpload": "Upload ID Card",
+    "idCardUploadFailed": "Failed to upload ID Card",
+    "idCardDescription": "Upload a clear copy of your government-issued or student ID (JPG, PNG, or PDF) to unlock borrowing privileges. Without it, you can view pages and download titles but cannot borrow books.",
+    "signInSubmit": "Sign In",
+    "signUpSubmit": "Create account"
+  },
+  "Validation": {
+    "required": "The {field} field is required",
+    "invalid": "The {field} field is invalid",
+    "min": "The {field} field must be at least {min} character(s)",
+    "max": "The {field} field must be no more than {max} character(s)",
+    "passwordsDoNotMatch": "The passwords do not match"
   }
 }
